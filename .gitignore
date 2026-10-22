@@ -1,0 +1,44 @@
+# 本机登录、课程缓存、调试环境及个人数据
+.runtime/
+.work/
+.cache/
+.chrome-test-profile/
+.playwright-cli/
+.pytest_cache/
+backups/
+logs/
+output/
+research/
+**/chrome-profile*/
+**/credentials/
+**/user-data*/
+
+# 可重新安装或生成的依赖、构建产物
+node_modules/
+__pycache__/
+*.py[cod]
+dist/
+server/ocr-runtime/tessdata/
+
+# 密钥及本机评测数据
+.env
+.env.*
+!.env.example
+*.local.*
+*.log
+*.pem
+*.key
+*.pfx
+*.p12
+*.sqlite*
+*.db
+*tokens.json
+*credentials.json
+*identity.json
+
+# 编辑器与系统临时文件
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+~$*

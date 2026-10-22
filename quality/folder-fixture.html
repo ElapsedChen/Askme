@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Askme Folder UI offline fixture</title>
+  <style>
+    html,body{margin:0;background:#eee9f5;font-family:Segoe UI,sans-serif}
+    #frame{width:500px;height:820px;margin:16px auto;background:white;overflow:hidden;box-shadow:0 12px 32px #30214d22}
+    #root{height:100%;min-height:0}
+    @media(max-width:540px){#frame{margin:0;width:100vw;height:100vh}}
+  </style>
+</head>
+<body>
+  <div id="frame"><div id="root"></div></div>
+  <script src="/extension/panel-controller.js"></script>
+  <script>
+    const width = new URLSearchParams(location.search).get('width') || '500';
+    document.getElementById('frame').style.width = `${width}px`;
+    const courses = [
+      { id:'1', title:'GSOE9820 - Engineering Project Management - 2026 T3', selected:true, syncedAt:'2026-10-03T01:00:00Z', pageCount:51, fileCount:35, indexedFiles:10 },
+      { id:'2', title:'MANF9543 - Computer Aided Design and Manufacturing - 2026 T3', selected:false, syncedAt:'2026-10-03T01:00:00Z', pageCount:21, fileCount:29, indexedFiles:0 },
+      { id:'3', title:'Required Student Essentials and Academic Support', selected:false, syncedAt:'2026-10-03T01:00:00Z', pageCount:8, fileCount:12, indexedFiles:12 }
+    ];
+    const host = { root: document.getElementById('root'), setOpen(){}, setWidth(){}, getState(){return {open:true}} };
+    const client = { async call(op){
+      if(op==='ui.bootstrap') return {layout:{view:'ask',width:Number(width)}};
+      if(op==='course.list') return {items:courses};
+      if(op==='ai.status') return {connected:true,model:'gpt-5.6-luna',ready:true};
+      if(op==='chat.list') return {items:[]};
+      if(op==='chat.read') return {items:[]};
+      if(op==='ui.layout.save') return {ok:true};
+      return {items:[]};
+    }};
+    window.controller = AskmePanelController.createPanelController({
+      host, client, document,
+      brandLogoUrl:'/extension/assets/askme-128.png',
+      folderIconUrl:'/extension/assets/folder.svg',
+      courseIconUrl:'/extension/assets/journal-text.svg'
+    });
+  </script>
+</body>
+</html>

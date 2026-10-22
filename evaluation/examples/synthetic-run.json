@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "runId": "synthetic-perfect-run",
+  "items": [
+    {
+      "id": "demo-qa-1",
+      "retrievedEvidenceIds": ["demo-span-a", "demo-span-b"],
+      "citationIds": ["demo-span-a", "demo-span-b"],
+      "claims": [
+        { "factId": "definition-fact", "citationIds": ["demo-span-a"] },
+        { "factId": "limitation-fact", "citationIds": ["demo-span-b"] }
+      ],
+      "refused": false
+    },
+    {
+      "id": "demo-summary-1",
+      "retrievedEvidenceIds": ["demo-summary-span"],
+      "citationIds": ["demo-summary-span"],
+      "claims": [
+        { "factId": "summary-core-fact", "citationIds": ["demo-summary-span"] }
+      ],
+      "refused": false
+    },
+    {
+      "id": "demo-unanswerable-1",
+      "retrievedEvidenceIds": [],
+      "citationIds": [],
+      "claims": [],
+      "refused": true
+    }
+  ]
+}

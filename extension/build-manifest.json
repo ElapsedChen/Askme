@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-03T16:15:08.009Z",
+  "extension": {
+    "name": "Askme",
+    "version": "1.12.0",
+    "build": "2026.10.04.3",
+    "id": "hmabehbhopolggfbmglhojehbjijcifi"
+  },
+  "service": {
+    "version": "2026.10.04.chatgpt-plan.13",
+    "port": 4317,
+    "provider": "chatgpt-plan",
+    "retrieval": "lexical",
+    "embedding": false,
+    "capabilities": [
+      "answer",
+      "translate",
+      "vision",
+      "practice",
+      "practice-v2",
+      "choice-v1"
+    ]
+  },
+  "sourceFingerprint": "b4ee24e33035b601e94202cf338a694037e7f673e9fa6dc577bba04ced7d0b78",
+  "files": {
+    "extension/account-store.js": {
+      "sha256": "d08231686047da334a5ea1812040af5b0e28f2dd2a83411f562d38fda42a18f8",
+      "sizeBytes": 6451
+    },
+    "extension/assets/askme-128.png": {
+      "sha256": "99bee228ced3f0a7dd561eadb7b8d566b7941e1842239153f364f8f7927c8601",
+      "sizeBytes": 8798
+    },
+    "extension/assets/askme-16.png": {
+      "sha256": "009d1e0c1e47d97a2231d1379dbd389b8d72f0fbfa2a0ded671b5ac3cb2dbbb0",
+      "sizeBytes": 656
+    },
+    "extension/assets/askme-256.png": {
+      "sha256": "3a2cf211657b9bab3ce2cd9d91d6923c34ec1e159946f834b51a7f4190966c4d",
+      "sizeBytes": 26349
+    },
+    "extension/assets/askme-32.png": {
+      "sha256": "1a9851699984a1c7b9c101707add75578f549a6ca40cdd3645a6c8052d1764cb",
+      "sizeBytes": 1527
+    },
+    "extension/assets/askme-48.png": {
+      "sha256": "6f6264f34a3a0aca846dd81a50c7d161e66a52d8eafc2ce2d43ab8d8a8486787",
+      "sizeBytes": 2398
+    },
+    "extension/assets/askme-open-panel-128.png": {
+      "sha256": "86725f3d0f062d2e061cd5e606c76fec920f6f68e8ebceee53132d9bd1bca63c",
+      "sizeBytes": 10569
+    },
+    "extension/assets/askme-open-panel-256.png": {
+      "sha256": "4b8cda828da11b922f606a87c81aa5da0d7f370a2d3e2b9ea5bc264872759d4d",
+      "sizeBytes": 29941
+    },
+    "extension/assets/askme-open-panel-48.png": {
+      "sha256": "2e46ac00c65cf83b5d431d5bff0ef4a2dd5712e865e4138ccf83d6e19fe100ed",
+      "sizeBytes": 2689
+    },
+    "extension/assets/askme-open-panel-master.png": {
+      "sha256": "93d2be86a919732a839f91aa1d048e34157230debc8cf8af9214c265fb773e8b",
+      "sizeBytes": 491363
+    },
+    "extension/assets/bootstrap-icons-LICENSE.txt": {
+      "sha256": "0fb3e11bd57e896c5a512afd64864d28a37de45d19835016c87ca1ad19ead969",
+      "sizeBytes": 1093
+    },
+    "extension/assets/folder.svg": {
+      "sha256": "2f7eadeca491fd75631de65102b3332fa57eff791b16058b428a537eb736f507",
+      "sizeBytes": 527
+    },
+    "extension/assets/journal-text.svg": {
+      "sha256": "72311fb829c2499196797bc4212bc36cc030e1ab9a42e327cc79475383a8bcc0",
+      "sizeBytes": 748
+    },
+    "extension/background.js": {
+      "sha256": "d3d036ec8943b632f40a80259d2fb2a3eca15dbfdaac5382840f7f9b4358d2a7",
+      "sizeBytes": 1176
+    },
+    "extension/capture-service.js": {
+      "sha256": "310f38bf8b60ac4d2744dd231a81801c232ae991281e03f1b5a7c83e58f57c17",
+      "sizeBytes": 4648
+    },
+    "extension/content-ui-client.js": {
+      "sha256": "b00fc81f17c31beb3cc186e7e4242b7fb61ec5d71dcc264cad9a31e079a4f3c7",
+      "sizeBytes": 6257
+    },
+    "extension/content.js": {
+      "sha256": "2a84fb8121d050c129e5a3a3afc97fce31d2d51461e8d072c96ea13425bbba5d",
+      "sizeBytes": 119886
+    },
+    "extension/conversation-skills.js": {
+      "sha256": "9c4b924777ec566c4b1a2301ec052cf81eb4f4fa5abde5ab74815e4b4c2b2413",
+      "sizeBytes": 16612
+    },
+    "extension/course-service.js": {
+      "sha256": "62bd911d389ca76f30c2ae39fcf9a3776c1cf46421f15393e47871d742719993",
+      "sizeBytes": 26236
+    },
+    "extension/deadline-sources.js": {
+      "sha256": "8569cffaf032893b0e842ae34f407803244bc3ae09836fd188593d77574ca96b",
+      "sizeBytes": 7359
+    },
+    "extension/knowledge-units.js": {
+      "sha256": "1d2da94444f9bf81a8b733297062308a8a82961ad51f14eb6d1350607f33647f",
+      "sizeBytes": 15715
+    },
+    "extension/learning-core.js": {
+      "sha256": "6e7c6dbc1dc1c3703a0f735d27566b07d63d1f0e5856e6244aee8c5d1c69e16f",
+      "sizeBytes": 23088
+    },
+    "extension/learning-service.js": {
+      "sha256": "171ca778ba1af5e95477234ab120851effe0963620b53663188505326dadca3e",
+      "sizeBytes": 13986
+    },
+    "extension/manifest.json": {
+      "sha256": "27e3e17bc79fb54642b61f6c3f8b8ef10b7a5cfb9f97de3dc182c5910dd0c650",
+      "sizeBytes": 1801
+    },
+    "extension/office-range.js": {
+      "sha256": "8190c6d26ce714f06d8d2feb11c19af12c9660415fe81b4ad270d6a58f3746c3",
+      "sizeBytes": 20990
+    },
+    "extension/overlay-host.js": {
+      "sha256": "4c3542007cf5902293a37c48f4ca1662f5dd4f01ef1d733131f63f384a7d3bd8",
+      "sizeBytes": 12668
+    },
+    "extension/panel-controller.js": {
+      "sha256": "b506dda937a2e5fd326c9b25834a2e6fbb1c5b84a14aa73adcd593bf2c75b4de",
+      "sizeBytes": 80932
+    },
+    "extension/panel.html": {
+      "sha256": "18067e987f153a4981d9dfb41295154acba8fccb3caddf1b5be28b7d464ed339",
+      "sizeBytes": 519
+    },
+    "extension/plan-transport.js": {
+      "sha256": "fa2edb3e710c48fda94e06758247c744ac46ada77c4970bf35c3b6443de2fc4a",
+      "sizeBytes": 4088
+    },
+    "extension/popup.css": {
+      "sha256": "631b494a7e4ea2a6841442045569f94d9b24debb08de2efa2ebd7c46abf79910",
+      "sizeBytes": 3438
+    },
+    "extension/popup.html": {
+      "sha256": "073d966536723de13e175ee1c124d572f9c7a8410b1c68d017e3df6742579ba5",
+      "sizeBytes": 1491
+    },
+    "extension/popup.js": {
+      "sha256": "8bdbb8c9d6c07ceb85d66f6b88f33ce72790ddbc046ae18b1b446f909abd65dd",
+      "sizeBytes": 2717
+    },
+    "extension/recovery.css": {
+      "sha256": "a2c92814cc0e2c4f661f534a5bdff7303ae52b7e40e91e3b92f1ed96b97bed54",
+      "sizeBytes": 261
+    },
+    "extension/recovery.js": {
+      "sha256": "3f98ea545ea2edfd33b24e8ce92f5db78c1fce37784cd376fb64633196351cb8",
+      "sizeBytes": 298
+    },
+    "extension/study-service.js": {
+      "sha256": "4a4bc8beae6c1dd55b87c77b2a3e4926fe01be7e3dbc804fa7ed103e9aa4acf3",
+      "sizeBytes": 18157
+    },
+    "extension/sync-health.js": {
+      "sha256": "608a2e05de1cee1dc116b8d1c8a4ccbcf764443df95aa853cf54059dedb2cb75",
+      "sizeBytes": 5985
+    },
+    "extension/ui-broker.js": {
+      "sha256": "dc3e71520d4a9f44eff5428a46c6295cdbaa269cadc19b0d1f9c38868a03e0af",
+      "sizeBytes": 12138
+    },
+    "extension/ui-protocol.js": {
+      "sha256": "1f34967ce5d5f3f0a77e0fc659e58fdffbfa3a54037586b5450f7ee1369a7e3d",
+      "sizeBytes": 8564
+    },
+    "extension/ui-runtime.js": {
+      "sha256": "06d71b85f022d941eb74dca60eaf364ce4c754beb75f5abcf01c038c9afbcd80",
+      "sizeBytes": 10270
+    },
+    "extension/unit-progress.js": {
+      "sha256": "48a149acb5b97525863528fcd8b4462ef70e818d40673e3ea1c7678b446f5506",
+      "sizeBytes": 5016
+    },
+    "server/chatgpt/plan-completion.mjs": {
+      "sha256": "c700ce33f2d9e2aba5ee233560234d018d92bc5bdc76bc49dad827687adf746b",
+      "sizeBytes": 3449
+    },
+    "server/chatgpt/plan-fetch.mjs": {
+      "sha256": "9f894d402626654221c1f09e6a2d7e771cdc6263c259e8657b8a56d2993aa45e",
+      "sizeBytes": 2731
+    },
+    "server/chatgpt/plan-session.mjs": {
+      "sha256": "aa53812a080f33d5792e956a42eb65092bd629bf6979124459574461584e0680",
+      "sizeBytes": 14746
+    },
+    "server/chatgpt/protocol.mjs": {
+      "sha256": "63531ed6197eccf322454968dde3a8ad00aade5e1e8c7e329c9abcbddf83c502",
+      "sizeBytes": 5559
+    },
+    "server/choice-practice.mjs": {
+      "sha256": "e5b74b3596718090f205fa3baa7bde700f8ebf83ee4e75ad06e3f2f99b936790",
+      "sizeBytes": 13604
+    },
+    "server/claim-verifier.mjs": {
+      "sha256": "4f0d74b583edcc1e1c590614105f49370cd613c34add873635f9356b9287f601",
+      "sizeBytes": 14767
+    },
+    "server/core.mjs": {
+      "sha256": "9bc04ea4f6b21a4578b96d21204872dc6661fb838de2d7205c608f45cee091c6",
+      "sizeBytes": 39971
+    },
+    "server/credential-protection.ps1": {
+      "sha256": "b7d4f6b885b30ef967f434a73823942ddc5c8e22ff8014c59abe0c6acda0e432",
+      "sizeBytes": 3446
+    },
+    "server/credential-store.mjs": {
+      "sha256": "5f06f61a1a45c0daf95fe9cadf7df35486219209bd127edf6a187f7da9cfb2a2",
+      "sizeBytes": 4950
+    },
+    "server/extract.py": {
+      "sha256": "80dfa6db7fd5e29013b2c7ff6212a6de724cbd46f6ac49b61fad8f62d493a018",
+      "sizeBytes": 11283
+    },
+    "server/file-upload.mjs": {
+      "sha256": "d99347f96dca2946e1cac08ffe8ca5d148e368109c583864b20e3f342307edae",
+      "sizeBytes": 4836
+    },
+    "server/identity-store.mjs": {
+      "sha256": "2af254ad85e7d31dc098dade601c90bc4b647f76a7f3a0fb1908239280d9bae4",
+      "sizeBytes": 1676
+    },
+    "server/index.mjs": {
+      "sha256": "ea087db320087acb86f7a2684f9782d223c25cf6d8ddae56badcd438f8ffabaa",
+      "sizeBytes": 14786
+    },
+    "server/learning.mjs": {
+      "sha256": "da05da123dc054e346a0fbd6bb5fb8201c53910fc17e7626247ac439a96e0742",
+      "sizeBytes": 12130
+    },
+    "server/ocr-runtime/README.md": {
+      "sha256": "5f53c3ad577f67ae263b635374bc37dbfe065887e27c213657655a92498440d3",
+      "sizeBytes": 2206
+    },
+    "server/ocr-runtime/package-lock.json": {
+      "sha256": "565d10c528f23f218f156ee940f578a6215070581939a8de8c75f019f21f0cac",
+      "sizeBytes": 5769
+    },
+    "server/ocr-runtime/package.json": {
+      "sha256": "47a44095806619a8c9fc3c23dae61dba25a415af6acc4d5b1e060521d382dc05",
+      "sizeBytes": 173
+    },
+    "server/ocr-runtime/prepare-data.mjs": {
+      "sha256": "58568da1b56ebcd725485fb579b0a18cef25b61ae3cc276a13e4d3a9951ab8cf",
+      "sizeBytes": 569
+    },
+    "server/ocr-runtime/tessdata/chi_sim.traineddata.gz": {
+      "sha256": "b8a23f10c7de500891eb458a8adc9cc58ab7f242f08b7d149f5e9aea4ad5db7c",
+      "sizeBytes": 1718768
+    },
+    "server/ocr-runtime/tessdata/eng.traineddata.gz": {
+      "sha256": "45b4cb346724ac1774f1c36f42f182b887bcdb28ebe63e6fff90ac41f3fcff91",
+      "sizeBytes": 2952873
+    },
+    "server/package-lock.json": {
+      "sha256": "f37629a067e419599699c590d356b9b577335d8d7c4302dae7796848b9018d52",
+      "sizeBytes": 577
+    },
+    "server/package.json": {
+      "sha256": "5a21a50703f55c8e73da66c0d2d1417df64f565d51006db4992b320a80d82ccd",
+      "sizeBytes": 211
+    },
+    "server/pdf_ocr.py": {
+      "sha256": "c2b63a2b20df385fb1649dd1ca2270a08861d87d232c2cae3e3df8e990a6c04b",
+      "sizeBytes": 7982
+    },
+    "server/pdf_ocr_worker.mjs": {
+      "sha256": "0626b7072abdc2ad4d904c3e1cf151aa78e53cfcaf4e115b09b05278a3022128",
+      "sizeBytes": 6205
+    },
+    "server/practice-core.mjs": {
+      "sha256": "ddc1ec78709c0ff76d65d74ccad5478b3e8dc6fa476eb3a6c304ff6643a9d0d0",
+      "sizeBytes": 5582
+    },
+    "server/prompts.mjs": {
+      "sha256": "4aed2e3f0bbe151da1c688d4c990a35702298bc791bcc5abdb7ecc5973244ff1",
+      "sizeBytes": 7083
+    },
+    "server/start.mjs": {
+      "sha256": "9c9acc4f8b6143fa41487eede6c1811bf09e06c5532b062832ea5b37ef3e7b3d",
+      "sizeBytes": 2397
+    },
+    "start-askme.ps1": {
+      "sha256": "42b567251222683af18c45c8be827767f3923c49c8c6443b46c9465b995eff95",
+      "sizeBytes": 4478
+    },
+    "tools/register-autostart.ps1": {
+      "sha256": "6b14be7bb1a6f79971c9a36cac52f3332a0a63408901831ee7c82a4e2cc9867c",
+      "sizeBytes": 2353
+    }
+  }
+}

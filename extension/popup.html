@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Askme</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="popup-shell" aria-labelledby="popup-title">
+    <header class="account-card">
+      <div class="avatar" aria-hidden="true"><img src="assets/askme-48.png" alt=""></div>
+      <div class="account-copy">
+        <strong id="account-name">Askme</strong>
+        <span id="account-detail">正在连接 UNSW Moodle…</span>
+      </div>
+      <button id="open-moodle-top" class="moodle-pill" type="button">打开 Moodle</button>
+    </header>
+
+    <button id="open-moodle-main" class="moodle-entry" type="button" aria-describedby="entry-description">
+      <span id="popup-title" class="entry-title">从 Moodle 课程开始</span>
+      <span id="entry-description" class="entry-description">打开您的 UNSW Moodle 课程中心，Askme 会在支持的课程页面中显示学习入口。</span>
+      <span class="entry-action">进入课程中心 <span aria-hidden="true">→</span></span>
+    </button>
+
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+    <footer class="footer">
+      <span class="verified-mark" aria-hidden="true">✓</span>
+      <span id="version">Askme</span>
+      <span aria-hidden="true">·</span>
+      <span>Chrome 已加载</span>
+    </footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

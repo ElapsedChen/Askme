@@ -1,0 +1,7 @@
+{
+  "name": "askme-chatgpt-plan-service",
+  "private": true,
+  "type": "module",
+  "scripts": {"start":"node start.mjs","test":"node --test *.test.mjs chatgpt/*.test.mjs"},
+  "dependencies": {"jose":"^6.1.0"}
+}

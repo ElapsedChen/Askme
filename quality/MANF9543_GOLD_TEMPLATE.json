@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "courseId": "100761",
+  "courseCode": "MANF9543",
+  "privacy": "Populate locally from the user's synced index. Do not commit private course text.",
+  "thresholds": {
+    "recallAtK": 0.8,
+    "mrrAtK": 0.65,
+    "citationSupport": 1,
+    "atomicSupport": 1
+  },
+  "cases": [
+    {
+      "id": "replace-with-local-case-001",
+      "query": "Replace with a question written from the course learning outcomes.",
+      "intent": "explain",
+      "scope": "Replace with Moodle section key",
+      "relevantSegmentIds": ["replace-with-seg-id"],
+      "goldClaims": [
+        {
+          "text": "Write one atomic fact supported by the selected material.",
+          "evidence": ["Paste a short exact evidence span locally."]
+        }
+      ]
+    }
+  ]
+}

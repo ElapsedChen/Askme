@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "datasetId": "synthetic-public-example",
+  "courseKey": "DEMO",
+  "items": [
+    {
+      "id": "demo-qa-1",
+      "type": "qa",
+      "answerability": "answerable",
+      "language": "zh",
+      "risk": "standard",
+      "question": "示例概念的定义和限制是什么？",
+      "evidenceGroups": [
+        { "id": "definition", "ids": ["demo-span-a"], "gain": 3, "required": true, "versionHash": "demo-v1" },
+        { "id": "limitation", "ids": ["demo-span-b", "demo-span-b-equivalent"], "gain": 2, "required": true, "versionHash": "demo-v1" }
+      ],
+      "requiredFacts": [
+        { "id": "definition-fact", "evidenceIds": ["demo-span-a"] },
+        { "id": "limitation-fact", "evidenceIds": ["demo-span-b", "demo-span-b-equivalent"] }
+      ]
+    },
+    {
+      "id": "demo-summary-1",
+      "type": "summary",
+      "answerability": "answerable",
+      "language": "en",
+      "risk": "standard",
+      "question": "Summarise the demo section.",
+      "evidenceGroups": [
+        { "id": "core", "ids": ["demo-summary-span"], "gain": 3, "required": true, "versionHash": "demo-v1" }
+      ],
+      "requiredFacts": [
+        { "id": "summary-core-fact", "evidenceIds": ["demo-summary-span"] }
+      ]
+    },
+    {
+      "id": "demo-unanswerable-1",
+      "type": "qa",
+      "answerability": "unanswerable",
+      "language": "zh",
+      "risk": "high",
+      "question": "材料没有提供的信息是什么？",
+      "evidenceGroups": [],
+      "requiredFacts": []
+    }
+  ]
+}
+

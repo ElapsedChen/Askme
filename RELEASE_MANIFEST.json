@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "release": {
+    "name": "Askme",
+    "version": "1.12.0",
+    "build": "2026.10.04.3",
+    "status": "released",
+    "serviceVersion": "2026.10.04.chatgpt-plan.13"
+  },
+  "artifact": {
+    "path": "dist/Askme-1.12.0-build-2026.10.04.3.zip",
+    "sizeBytes": 707794,
+    "sha256": "59278624EBFFA664548763BB165D0FBB34F18354F2536611111D5007495CA450",
+    "sourceFileCount": 41,
+    "zipFileCount": 41,
+    "byteForByteMatch": true,
+    "zipIntegrity": "passed"
+  },
+  "buildManifest": {
+    "path": "extension/build-manifest.json",
+    "sourceFingerprint": "b4ee24e33035b601e94202cf338a694037e7f673e9fa6dc577bba04ced7d0b78",
+    "hashedReleaseInputCount": 69,
+    "serviceVersion": "2026.10.04.chatgpt-plan.13"
+  },
+  "verification": {
+    "candidateParity": "5 candidate files match production byte-for-byte after normalizing the content version line",
+    "javascriptSyntax": "10 candidate and production files passed node --check; content version-only correction followed",
+    "liveHealth": {
+      "ready": true,
+      "authenticated": true,
+      "provider": "chatgpt-plan",
+      "model": "gpt-5.6-luna",
+      "serviceVersion": "2026.10.04.chatgpt-plan.13",
+      "state": "connected",
+      "lastError": null
+    },
+    "ollama": "not enabled",
+    "realChromeAcceptance": "confirmed build 2026.10.04.3; no Chrome refresh or AI operation run in this release gate",
+    "manfAnswerQuality": "passed after completed sync: Week4 answer lists Solidworks, Fusion360 and Denford VR Software with matching course excerpt. Evidence: .work/retrieval-fix/manf-post-update-1.12.0-sources.json",
+    "serviceVersion": "2026.10.04.chatgpt-plan.13",
+    "repackReason": "deleted daily UI text '当前页面构建：2026.10.04.3' from panel-controller.js",
+    "replacedArtifact": {
+      "sha256": "25E7592277752C551A53BF564C8CE0B0C80AE1BE37BED733ABFE872765D5FD00",
+      "sizeBytes": 707829,
+      "reason": "replaced by same-version pure UI copy deletion"
+    }
+  },
+  "history": [
+    {
+      "version": "1.11.2",
+      "build": "2026.10.04.2",
+      "serviceVersion": "2026.10.04.chatgpt-plan.13",
+      "realEvidence": {
+        "uiBusy": "recovered",
+        "task1Brief": "issue disappeared after sync",
+        "manfAnswerQuality": "failed; Week4 workflow software were visible but not retrieved"
+      },
+      "chromeBuildLoaded": "confirmed 2026.10.04.2"
+    },
+    {
+      "version": "1.11.1",
+      "build": "2026.10.04.1",
+      "serviceVersion": "2026.10.04.chatgpt-plan.12",
+      "realEvidence": {
+        "uiBusy": "passed",
+        "task1Dates": "passed",
+        "practice": "passed",
+        "gsoe9820Files": "31/33"
+      },
+      "chromeBuildLoaded": "old build; 1.11.2 was not loaded"
+    }
+  ]
+}
